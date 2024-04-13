@@ -1,0 +1,62 @@
+{
+  "product": [
+    {
+      "name": "aaaa",
+      "category": "Electronics",
+      "date": "2022-08-09T18:30:00.000Z",
+      "status": "New Product",
+      "price": 12.4,
+      "id": 1
+    },
+    {
+      "name": "bbb",
+      "category": "Electronics",
+      "date": "2022-08-08T18:30:00.000Z",
+      "status": "SecondHand Product",
+      "price": 20.4,
+      "id": 2
+    },
+    {
+      "name": "sagar",
+      "category": "Electronics",
+      "date": "2022-08-01T18:30:00.000Z",
+      "status": "New Product",
+      "price": 18.4,
+      "id": 3
+    },
+    {
+      "name": "Pra ForYou",
+      "category": "Vegitables",
+      "date": "2022-08-15T18:30:00.000Z",
+      "status": "New Product",
+      "price": 14.6,
+      "id": 4
+    },
+    {
+      "name": "mango",
+      "category": "Vegitables",
+      "date": "2022-08-09T18:30:00.000Z",
+      "status": "New Product",
+      "price": 15.7,
+      "id": 5
+    },
+    {
+      "name": "dji.klsd 132434",
+      "category": "Vegitables",
+      "date": "2022-08-09T18:30:00.000Z",
+      "status": "SecondHand Product",
+      "price": 20.7,
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

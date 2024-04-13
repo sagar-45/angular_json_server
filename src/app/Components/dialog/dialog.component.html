@@ -1,0 +1,41 @@
+<h2 mat-dialog-title>Form</h2>
+<div mat-dialog-content>
+    <form [formGroup]="form">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput placeholder="Ex. Name">
+            <mat-error>Please enter name</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Category</mat-label>
+            <mat-select formControlName="category">
+                <mat-option *ngFor="let item of categories" [value]="item">
+                    {{item}}
+                </mat-option>
+            </mat-select>
+            <mat-error>Please choose category</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Date</mat-label>
+            <input matInput formControlName="date" [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error>Please enter date</mat-error>
+        </mat-form-field>
+        <!-- <mat-form-field> -->
+            <label for=""><h2>Product Status</h2></label>
+            <mat-radio-group class="example-radio-group" formControlName="status">
+                <mat-radio-button class="example-radio-button" *ngFor="let item of statusList" [value]="item">{{item}}</mat-radio-button>
+              </mat-radio-group>
+        <!-- </mat-form-field> -->
+        <mat-form-field>
+            <mat-label>Price</mat-label>
+            <input matInput type="number" formControlName="price" placeholder="Price">
+            <mat-error>Please enter price</mat-error>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="SaveData()">{{Btntext}}</button>
+  </div>
